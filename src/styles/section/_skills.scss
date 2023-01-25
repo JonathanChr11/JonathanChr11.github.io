@@ -1,0 +1,148 @@
+@import '/src/styles/color/colors';
+@import '/src/styles/responsive/responsive';
+
+.skills-container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $white;
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: $large) {
+        padding: 50px 48px;
+    }
+    @media screen and (max-width: $smedium) {
+        padding: 24px 24px;
+    }
+    @media screen and (max-width: $small) {
+        padding: 24px 24px;
+    }
+}
+
+.skills-subcontainer {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $medium) {
+        flex-direction: column;
+        align-items: center;
+    }
+    &-left {
+        text-align: start;
+        width: 500px;
+        @media screen and (max-width: $large) {
+            width: 400px;
+        }
+        @media screen and (max-width: $medium) {
+            width: 100%;
+        }
+    }
+    &-right {
+        width: 500px;
+        margin-top: 10px;
+        @media screen and (max-width: $large) {
+            width: 400px;
+        }
+        @media screen and (max-width: $medium) {
+            width: 100%;
+        }
+    }
+    &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: $large) {
+            margin-left: 60px;
+        }
+        @media screen and (max-width: $medium) {
+            margin: 0 50px 50px 50px;
+            justify-content: space-between;
+        }
+        @media screen and (max-width: $smedium) {
+            margin: 0 0 30px 0;
+        }
+        @media screen and (max-width: $small) {
+            margin: 0 0 30px 0;
+        }
+    }
+}
+
+.skills-title {
+    font-size: 36px;
+    @media screen and (max-width: $large) {
+        font-size: 30px;
+    }
+    @media screen and (max-width: $smedium) {
+        font-size: 24px;
+    }
+    @media screen and (max-width: $small) {
+        font-size: 20px;
+    }
+}
+
+.skills-desc {
+    font-size: 20px;
+    @media screen and (max-width: $large) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: $small) {
+        font-size: 12px;
+    }
+}
+
+.skills-list {
+    &-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 90px;
+        @media screen and (max-width: $medium) {
+            margin: 0;
+        }
+    }
+    &-alignment {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        gap: 20px;
+        font-size: 16px;
+        @media screen and (max-width: $small) {
+            font-size: 12px;
+        }
+    }
+}
+
+.skills-icon {
+    width: 40px;
+    height: 40px;
+    @media screen and (max-width: $small) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.skills-progressbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.progressbar-width {
+    width: 100%;
+}
+
+.figma-progress {
+    margin-right: 12px;
+}

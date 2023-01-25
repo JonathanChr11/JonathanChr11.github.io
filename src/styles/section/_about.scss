@@ -1,0 +1,87 @@
+@import '/src/styles/color/colors';
+@import '/src/styles/responsive/responsive';
+
+.about-container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 100px 100px;
+    text-align: center;
+    color: $white;
+    @media screen and (max-width: $large) {
+        padding: 0 48px;
+    }
+    @media screen and (max-width: $smedium) {
+        padding: 24px 24px;
+    }
+    @media screen and (max-width: $small) {
+        padding: 24px 24px;
+    }
+    &-mini {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        @media screen and (max-width: $smedium) {
+            flex-direction: column-reverse;
+        }
+        @media screen and (max-width: $small) {
+            flex-direction: column-reverse;
+        }
+        &-left {
+            text-align: start;
+            width: 700px;
+            @media screen and (max-width: $extra) {
+                width: 600px;
+            }
+            @media screen and (max-width: $large) {
+                width: 500px;
+            }
+            @media screen and (max-width: $medium) {
+                width: 350px;
+            }
+            @media screen and (max-width: $smedium) {
+                margin-top: 20px;
+                width: 300px;
+            }
+            @media screen and (max-width: $small) {
+                width: 250px;
+            }
+        }
+    }
+}
+
+.photo {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    object-fit: cover;
+    @media screen and (max-width: $large) {
+        width: 300px;
+        height: 300px;
+    }
+    @media screen and (max-width: $medium) {
+        width: 250px;
+        height: 250px;
+    }
+    @media screen and (max-width: $smedium) {
+        width: 200px;
+        height: 200px;
+    }
+    @media screen and (max-width: $small) {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.contents-intro {
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    @media screen and (max-width: $large) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: $small) {
+        margin-top: 40px;
+        font-size: 12px;
+    }
+}

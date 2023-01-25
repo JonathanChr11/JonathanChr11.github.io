@@ -1,0 +1,25 @@
+@import '/src/styles/color/colors';
+@import '/src/styles/responsive/responsive';
+
+.portfolio-container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 100px 100px;
+    text-align: center;
+    color: $white;
+    @media screen and (max-width: $large) {
+        padding: 48px 48px;
+    }
+    @media screen and (max-width: $smedium) {
+        padding: 50px 24px;
+    }
+    @media screen and (max-width: $small) {
+        padding: 50px 24px;
+    }
+    &-flex {
+        margin-top: 64px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+}

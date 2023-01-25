@@ -1,0 +1,22 @@
+@import '/src/styles/color/colors';
+@import '/src/styles/responsive/responsive';
+
+.image {
+    &-style {
+        width: 350px;
+        height: 225px;
+        border-radius: 12px;
+        object-fit: cover;
+        @media screen and (max-width: $medium) {
+            width: 275px;
+            height: 150px;
+        }
+    }
+}
+
+.title-style {
+    font-size: 24px;
+    @media screen and (max-width: $medium) {
+        font-size: 18px;
+    }
+}
