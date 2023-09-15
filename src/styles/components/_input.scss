@@ -1,0 +1,40 @@
+@import '/src/styles/color/colors';
+@import '/src/styles/responsive/responsive';
+
+.input {
+    &-container {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    }
+    &-label {
+        width: 100%;
+        font-size: 20px;
+        @media screen and (max-width: $small) {
+            font-size: 16px;
+        }
+    }
+    &-style {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+        border-radius: 12px;
+        padding: 16px 12px; 
+        width: 94%;
+        border: 1px solid $black;
+        outline: none;
+        &-textarea {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            resize: none;
+            font-size: 18px;
+            border-radius: 12px;
+            padding: 16px 12px; 
+            width: 94%;
+            height: 150px;
+            border: 1px solid $black;
+            outline: none;
+        }
+    }
+}

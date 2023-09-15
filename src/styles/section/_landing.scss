@@ -1,0 +1,207 @@
+@import "/src/styles/color/colors";
+@import "/src/styles/responsive/responsive";
+
+.landing-container {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px 110px 100px;
+    transition: all 1s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    &-left {
+        z-index: 1;
+    }
+    @media screen and (max-width: $large) {
+        padding: 20px 48px 110px 48px;
+    }
+    @media screen and (max-width: $smedium) {
+        padding: 20px 24px 20px 24px;
+        flex-direction: column;
+        text-align: center;
+    }
+    @media screen and (max-width: $small) {
+        padding: 20px 24px 20px 24px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.circle {
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    background-image: radial-gradient(circle, $green, transparent, transparent);
+    animation: animate 10s ease-in-out infinite;
+    @media screen and (max-width: $large) {
+        height: 400px;
+        width: 400px;
+    }
+    @media screen and (max-width: $medium) {
+        height: 300px;
+        width: 300px;
+    }
+    @media screen and (max-width: $smedium) {
+        height: 200px;
+        width: 200px;
+    }
+    @media screen and (max-width: $small) {
+        display: none;
+    }
+    &:nth-child(1) {
+        position: absolute;
+        left: -300px;
+        top: -80px;
+        @media screen and (max-width: $large) {
+            left: -275px;
+        }
+        @media screen and (max-width: $medium) {
+            left: -200px;
+        }
+        @media screen and (max-width: $medium) {
+            top: 0;
+            left: -100px;
+        }
+    }
+    &:nth-child(2) {
+        position: absolute;
+        right: -275px;
+        top: 100px;
+        @media screen and (max-width: $large) {
+            right: -225px;
+        }
+        @media screen and (max-width: $medium) {
+            right: -185px;
+        }
+        @media screen and (max-width: $smedium) {
+            right: -105px;
+        }
+    }
+}
+
+.circle-fixed {
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    background-image: radial-gradient(circle, $green, transparent, transparent);
+    position: absolute;
+    left: 100px;
+    top: -80px;
+    @media screen and (max-width: $large) {
+        height: 400px;
+        width: 400px;
+        left: 60px;
+        top: -60px;
+    }
+    @media screen and (max-width: $medium) {
+        height: 300px;
+        width: 300px;
+        top: -40px;
+    }
+    @media screen and (max-width: $smedium) {
+        left: 125px;
+    }
+    @media screen and (max-width: $bsmall) {
+        left: 60px;
+    }
+    @media screen and (max-width: $small) {
+        display: none;
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.joc-dark {
+    width: 500px;
+    @media screen and (max-width: $large) {
+        width: 400px;
+    }
+    @media screen and (max-width: $medium) {
+        width: 300px;
+    }
+    @media screen and (max-width: $small) {
+        width: 275px;
+    }
+}
+
+.joc-light {
+    width: 500px;
+    @media screen and (max-width: $large) {
+        width: 400px;
+    }
+    @media screen and (max-width: $medium) {
+        width: 300px;
+    }
+    @media screen and (max-width: $small) {
+        width: 275px;
+    }
+}
+
+.contents {
+    letter-spacing: 1px;
+    &-name {
+        font-size: 52px;
+        @media screen and (max-width: $large) {
+            font-size: 36px;
+        }
+        @media screen and (max-width: $medium) {
+            font-size: 24px;
+        }
+        @media screen and (max-width: $smedium) {
+            font-size: 28px;
+        }
+    }
+    &-major {
+        font-size: 32px;
+        margin-top: -30px;
+        @media screen and (max-width: $large) {
+            font-size: 20px;
+        }
+        @media screen and (max-width: $medium) {
+            padding-top: 20px;
+            font-size: 16px;
+        }
+        @media screen and (max-width: $smedium) {
+            padding-top: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+.names {
+    font-weight: 800;
+}
+
+.profile {
+    margin: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: $extra) {
+        margin: 70px 0px;
+    }
+    @media screen and (max-width: $large) {
+        margin: 70px 0px;
+    }
+    @media screen and (max-width: $slarge) {
+        margin: 50px 0px;
+        display: block;
+    }
+    @media screen and (max-width: $smedium) {
+        margin: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

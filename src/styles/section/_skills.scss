@@ -1,0 +1,177 @@
+@import "/src/styles/color/colors";
+@import "/src/styles/responsive/responsive";
+
+.skills-container {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: $white;
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: $large) {
+        padding: 50px 48px;
+    }
+    @media screen and (max-width: $smedium) {
+        padding: 24px 24px;
+    }
+    @media screen and (max-width: $small) {
+        padding: 24px 24px;
+    }
+}
+
+.skills-subcontainer {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    @media screen and (max-width: $medium) {
+        flex-direction: column;
+        align-items: center;
+    }
+    &-list {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.skills-title {
+    font-size: 36px;
+    @media screen and (max-width: $large) {
+        font-size: 30px;
+    }
+    @media screen and (max-width: $smedium) {
+        font-size: 24px;
+    }
+    @media screen and (max-width: $small) {
+        font-size: 20px;
+    }
+}
+
+.skills-desc {
+    width: 500px;
+    font-size: 20px;
+    @media screen and (max-width: $large) {
+        width: 400px;
+        font-size: 18px;
+    }
+    @media screen and (max-width: $medium) {
+        width: 75%;
+    }
+    @media screen and (max-width: $small) {
+        font-size: 12px;
+    }
+}
+
+.skills-list {
+    &-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    &-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    &-alignment {
+        position: relative;
+        font-size: 24px;
+        color: transparent;
+        text-transform: uppercase;
+        cursor: pointer;
+        @media only screen and (max-width: $large) {
+            font-size: 22px;
+        }
+        @media only screen and (max-width: $slarge) {
+            font-size: 20px;
+        }
+        @media only screen and (max-width: $medium) {
+            font-size: 18px;
+        }
+        @media only screen and (max-width: $smedium) {
+            font-size: 16px;
+        }
+        &:hover span:nth-child(1) {
+            transform: translateY(-1rem);
+            @media only screen and (max-width: $large) {
+                transform: translateY(-0.7rem);
+            }
+            @media only screen and (max-width: $slarge) {
+                transform: translateY(-0.55rem);
+            }
+            @media only screen and (max-width: $medium) {
+                transform: translateY(-0.47rem);
+            }
+            @media only screen and (max-width: $smedium) {
+                transform: translateY(-0.4rem);
+            }
+        }
+        &:hover span:nth-child(2) {
+            transform: translateY(1rem);
+            @media only screen and (max-width: $large) {
+                transform: translateY(0.7rem);
+            }
+            @media only screen and (max-width: $slarge) {
+                transform: translateY(0.55rem);
+            }
+            @media only screen and (max-width: $medium) {
+                transform: translateY(0.47rem);
+            }
+            @media only screen and (max-width: $smedium) {
+                transform: translateY(0.4rem);
+            }
+        }
+        &:hover span:nth-child(3) {
+            opacity: 1;
+            transition: opacity 700ms ease;
+        }
+        & span:nth-child(1),
+        & span:nth-child(2) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $white;
+            transition: 0.5s;
+            overflow: hidden;
+        }
+        & span:nth-child(1) {
+            clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+        }
+        & span:nth-child(2) {
+            clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+        }
+        & span:nth-child(3) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 350ms ease;
+            background: transparent;
+        }
+    }
+}
+
+.skills-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    @media screen and (max-width: $slarge) {
+        width: 25px;
+        height: 25px;
+    }
+    @media screen and (max-width: $smedium) {
+        width: 15px;
+        height: 15px;
+    }
+}

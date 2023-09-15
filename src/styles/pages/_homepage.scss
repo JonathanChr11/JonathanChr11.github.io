@@ -1,0 +1,203 @@
+@import '/src/styles/color/colors';
+@import '/src/styles/responsive/responsive';
+
+.page {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+}
+  
+#light {
+    background-color: $light-mode;
+}
+  
+#dark {
+    background-color: $dark-mode;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $black;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: $green;
+}
+
+#light .navbar-container{
+    background: $white;
+}
+  
+#dark .navbar-container {
+    background: $black;
+}
+
+#light .logo-dark {
+    display: none;
+}
+
+#dark .logo-light {
+    display: none;
+}
+
+#light .navbar {
+    &-menu a {
+        color: $black;
+    }
+}
+
+#dark .navbar {
+    &-menu a {
+        color: $white;
+    }
+}
+
+#light .btn {
+    color: $black;
+}
+
+#dark .btn {
+    color: $white;
+}
+
+#light .burger-bar {
+    background-color: $black;
+}
+
+#dark .burger-bar {
+    background-color: $white;
+}
+
+#light .menu {
+    background-color: $white;
+    a {
+        color: $black;
+    }
+}
+
+#dark .menu {
+    background-color: $black;
+    a {
+        color: $white;
+    }
+}
+
+.switch {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 150px;
+    padding-right: 100px;
+    margin-right: 45px;
+    @media screen and (max-width: $large) {
+        margin-right: 0;
+        padding-top: 120px;
+        padding-right: 48px;
+    }
+    @media screen and (max-width: $medium) {
+        margin-right: 0;
+        padding-right: 48px;
+    }
+    @media screen and (max-width: $small) {
+        margin-right: 0;
+        padding-top: 100px;
+        padding-right: 24px;
+    }
+}
+
+#light .joc-dark {
+    display: none;
+}
+
+#dark .joc-light {
+    display: none;
+}
+
+#light .contents {
+    color: $black;
+}
+
+#dark .contents {
+    color: $white;
+}
+
+#light .btn-cv {
+    color: $black;
+}
+
+#dark .btn-cv {
+    color: $white;
+}
+
+.title {
+    font-size: 40px;
+    @media screen and (max-width: $large) {
+        font-size: 36px;
+    }
+    @media screen and (max-width: $medium) {
+        font-size: 32px;
+    }
+    @media screen and (max-width: $small) {
+        font-size: 24px;
+    }
+}
+
+hr {
+    width: 150px;
+    height: 4px;
+    background-color: $green;
+    border: none;
+    @media screen and (max-width: $large) {
+        width: 125px;
+    }
+    @media screen and (max-width: $medium) {
+        width: 100px;
+    }
+    @media screen and (max-width: $small) {
+        width: 60px;
+    }
+}
+
+#light .about-container {
+    color: $black;
+}
+
+#dark .about-container {
+    color: $white;
+}
+
+#light .hobby-container {
+    color: $black;
+}
+
+#dark .hobby-container {
+    color: $white;
+}
+
+#light .skills-container {
+    color: $black;
+}
+
+#dark .skills-container {
+    color: $white;
+}
+
+#light .portfolio-container {
+    color: $black;
+}
+
+#dark .portfolio-container {
+    color: $white;
+}
+
+#light .contact-container {
+    color: $black;
+}
+
+#dark .contact-container {
+    color: $white;
+}

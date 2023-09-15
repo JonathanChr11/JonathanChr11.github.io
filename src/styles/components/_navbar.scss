@@ -1,0 +1,219 @@
+@import "/src/styles/color/colors";
+@import "/src/styles/responsive/responsive";
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 200;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: $large) {
+        padding: 20px 48px;
+    }
+    @media screen and (max-width: $smedium) {
+        padding: 20px 24px;
+        img {
+            width: 125px;
+        }
+    }
+    @media screen and (max-width: $small) {
+        img {
+            width: 100px;
+        }
+    }
+    &-logo {
+        display: block;
+        @media screen and (max-width: $smedium) {
+            display: none;
+        }
+        &-mobile {
+            display: none;
+            @media screen and (max-width: $smedium) {
+                display: block;
+                width: 50px !important;
+            }
+            @media screen and (max-width: $small) {
+                width: 45px !important;
+            }
+        }
+    }
+    &-menu {
+        padding-right: 30px;
+        @media screen and (max-width: $large) {
+            display: none;
+        }
+    }
+    &-menu ul {
+        display: inline-block;
+    }
+    &-menu ul li {
+        list-style: none;
+        padding: 20px;
+        cursor: pointer;
+    }
+    &-menu a {
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: $white;
+        font-size: 20px;
+        transition: all 0.3s ease-in-out;
+        &::after {
+            content: "";
+            width: 0%;
+            height: 3px;
+            background: $green;
+            position: absolute;
+            left: 0px;
+            top: 40px;
+            transition: 0.5s;
+        }
+        &:hover {
+            color: $green !important;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+    &-button {
+        @media screen and (max-width: $large) {
+            display: none;
+        }
+    }
+}
+
+.active {
+    color: $green !important;
+}
+
+.active::after {
+    width: 100% !important;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width: $large) {
+        height: 100%;
+        width: 2.8em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    @media screen and (max-width: $small) {
+        width: 2.3em;
+    }
+}
+
+.burger-bar {
+    width: 2.5em;
+    height: 0.5em;
+    margin: 4px;
+    border-radius: 0.5em;
+    @media screen and (max-width: $small) {
+        width: 2em;
+        height: 0.3em;
+    }
+}
+
+.menu {
+    width: 45vw;
+    height: 100vh;
+    background-color: $black;
+    position: fixed;
+    top: 100px;
+    z-index: 2;
+    @media screen and (max-width: $smedium) {
+        width: 70vw;
+        top: 85px;
+    }
+    @media screen and (max-width: $bsmall) {
+        width: 70vw;
+        top: 80px;
+    }
+    ul li {
+        list-style: none;
+        padding: 20px 0;
+    }
+    li {
+        margin-top: 40px;
+        @media screen and (max-width: $small) {
+            margin-top: 30px;
+        }
+    }
+    a {
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: $white;
+        font-size: 20px;
+        transition: all 0.3s ease-in-out;
+        @media screen and (max-width: $small) {
+            font-size: 16px;
+        }
+        &::after {
+            content: "";
+            width: 0%;
+            height: 3px;
+            background: $green;
+            position: absolute;
+            left: 0px;
+            top: 40px;
+            transition: 0.5s;
+        }
+        &:hover {
+            color: $green !important;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+.hidden {
+    right: -510px;
+    transition: ease-out 0.5s;
+}
+
+.visible {
+    right: -47px;
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(0.75em, 0.7em);
+    transition: ease-out 0.5s;
+    @media screen and (max-width: $small) {
+        transform: rotate(45deg) translate(0.55em, 0.4em);
+    }
+}
+
+.burger-bar.clicked:nth-child(2) {
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3) {
+    transform: rotate(135deg) translate(-0.75em, 0.65em);
+    transition: ease-out 0.5s;
+    @media screen and (max-width: $small) {
+        transform: rotate(135deg) translate(-0.75em, 0.6em);
+    }
+}
+
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
