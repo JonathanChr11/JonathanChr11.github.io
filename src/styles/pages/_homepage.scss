@@ -1,5 +1,5 @@
-@import '/src/styles/color/colors';
-@import '/src/styles/responsive/responsive';
+@import "/src/styles/color/colors";
+@import "/src/styles/responsive/responsive";
 
 .page {
     margin: 0;
@@ -7,11 +7,11 @@
     box-sizing: border-box;
     transition: all 0.5s ease-in-out;
 }
-  
+
 #light {
     background-color: $light-mode;
 }
-  
+
 #dark {
     background-color: $dark-mode;
 }
@@ -29,10 +29,10 @@
     background-color: $green;
 }
 
-#light .navbar-container{
+#light .navbar-container {
     background: $white;
 }
-  
+
 #dark .navbar-container {
     background: $black;
 }
@@ -182,8 +182,22 @@ hr {
     color: $black;
 }
 
+#light .skills-list-alignment {
+    & span:nth-child(1),
+    & span:nth-child(2) {
+        color: $black;
+    }
+}
+
 #dark .skills-container {
     color: $white;
+}
+
+#dark .skills-list-alignment {
+    & span:nth-child(1),
+    & span:nth-child(2) {
+        color: $white;
+    }
 }
 
 #light .portfolio-container {
