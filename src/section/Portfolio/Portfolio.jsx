@@ -18,6 +18,9 @@ import PortfolioImg6 from "assets/images/port6.png";
 import PortfolioImg7 from "assets/images/port7.png";
 import PortfolioImg8 from "assets/images/port8.png";
 import PortfolioImg9 from "assets/images/port9.png";
+import PortfolioImg10 from "assets/images/port10.png";
+import PortfolioImg11 from "assets/images/port11.png";
+import PortfolioImg12 from "assets/images/port12.png";
 
 import "styles/section/_portfolio.scss";
 
@@ -113,6 +116,33 @@ const Portfolio = () => {
                             firstText="ReactJS + TypeScript"
                             secondText="SASS (SCSS)"
                             imageTitle="LEAP 2.1 (Learning Portal)"
+                        />
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <ImageSingleLang
+                            image={PortfolioImg10}
+                            webLink="https://med-c.la11ebusiness.xyz/"
+                            githubLink="https://med-c.la11ebusiness.xyz/"
+                            firstText="Wordpress"
+                            imageTitle="Med-C"
+                        />
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <ImageSingleLang
+                            image={PortfolioImg11}
+                            webLink="https://jonathanchr11.github.io/cloudius-final-project-lec/"
+                            githubLink="https://github.com/JonathanChr11/cloudius-final-project-lec"
+                            firstText="Bootstrap"
+                            imageTitle="Cloudius"
+                        />
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <ImageSingleLang
+                            image={PortfolioImg12}
+                            webLink="https://umrohvr.co.id/"
+                            githubLink="https://umrohvr.co.id/"
+                            firstText="Wordpress"
+                            imageTitle="UmrohVR"
                         />
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000">
