@@ -21,6 +21,7 @@ import PortfolioImg9 from "assets/images/port9.png";
 import PortfolioImg10 from "assets/images/port10.png";
 import PortfolioImg11 from "assets/images/port11.png";
 import PortfolioImg12 from "assets/images/port12.png";
+import PortfolioImg13 from "assets/images/port13.png";
 
 import "styles/section/_portfolio.scss";
 
@@ -143,6 +144,15 @@ const Portfolio = () => {
                             githubLink="https://umrohvr.co.id/"
                             firstText="Wordpress"
                             imageTitle="UmrohVR"
+                        />
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <Image
+                            image={PortfolioImg13}
+                            webLink="https://aloer.co.id/"
+                            firstText="NextJS"
+                            secondText="TailwindCSS"
+                            imageTitle="Aloer"
                         />
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000">
