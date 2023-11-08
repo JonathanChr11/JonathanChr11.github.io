@@ -6,17 +6,17 @@ export const HOBBY_CONTENTS = [
     },
     {
         id: 2,
-        image: "",
+        image: "/images/hobby/game.png",
         title: "Play Games",
     },
     {
         id: 3,
-        image: "",
+        image: "/images/hobby/music.png",
         title: "Listen to Music",
     },
     {
         id: 4,
-        image: "",
+        image: "/images/hobby/film.png",
         title: "Watch K-Drama",
     },
 ];
