@@ -44,6 +44,7 @@ const Landing = () => {
                             <Typewriter
                                 options={{
                                     strings: [
+                                        "Web Developer",
                                         "Information Systems",
                                         "BINUSIAN 2025",
                                     ],
@@ -56,7 +57,7 @@ const Landing = () => {
                     <div className="profile">
                         <Button
                             btnLink={
-                                "https://drive.google.com/file/d/1Yr4FK2IfRJExAXfBD-K_sKuMnngJsQ8e/view?usp=sharing"
+                                "https://drive.google.com/file/d/1VJ9TtxQ_Ve6PpNX48_dqk3xauHTt4HZr/view?usp=sharing"
                             }
                             btnStyle={"btn-cv"}
                             iconDisplayBack={"fa-solid fa-download"}

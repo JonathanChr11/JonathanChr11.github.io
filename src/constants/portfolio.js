@@ -120,10 +120,10 @@ export const PORTFOLIO_CONTENTS = [
     },
     {
         id: 16,
-        image: "/images/portfolio/coming-soon.png",
+        image: "/images/portfolio/bandarkopi.png",
         imageTitle: "Bandar Kopi",
         webLink: "https://bandarkopi.co.id/",
         firstText: "ReactJS",
-        secondText: "SASS (SCSS)",
+        secondText: "Laravel",
     },
 ];
